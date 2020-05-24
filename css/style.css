@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Oswald&display=swap');
+/*  
+***********main styles
+  */
+* {
+    box-sizing: border-box;
+}
+
+section {
+    text-align:  center;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+h1,
+h4 {
+    color: #006400;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.4em;
+}
+
+h4 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+a {
+    color: #FF00FF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;    
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+p,
+a {
+    font-size: 16px;
+    text-align:  center;
+    padding-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*  
+*********header styles
+  */
+
+header {
+    text-align: center;
+    justify-content: center;
+    margin: auto; 
+    background-color: #FF69B4;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+    padding-top: 20px;
+
+}
+
+header p {
+    text-align:  center;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #191970;
+    border-radius: 5px;
+}
+
+header img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+/*  
+************main body styles
+  */
+.portfolio {
+    padding-top: 15px;
+    background-color: #87CEFA;
+    border-radius: 5px;
+}
+
+#skills {
+    padding-top: 15px;
+    background-color: #BA55D3;
+    border-radius: 5px;
+}
+
+#skills p {
+    background-color: #00FFFF;
+    color: #9932Cc;
+    text-align:  center;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+}
+
+#skills h4 {
+    color:yellow;
+    font-family: 'Chelsea Market', cursive;
+    margin-bottom: 35px;
+}
+
+
+/*  
+**************footer styles
+  */
+#contact {
+    background-color: #F4A460;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+.left {
+    margin-top: 0%;
+    float: left;
+    margin-right: 0px;
+}
+.right {
+    margin-left: 0px;
+    float: right;
+}
+
+footer nav{
+    display: none;
+}
+
+
+/*  
+****************media queries
+  */
+@media (min-width: 768px) {   
+    .nav-name {
+        margin-top: 20px;
+        float: left;
+        font-size: 30px;
+        color: #4B0082;
+    }
+    
+    #contact .nav-btn {
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    #contact .comment {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .nav-btn {
+        text-align: left;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    footer .left,
+    footer .right {
+        display: none;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-around;
+        color: yellow;
+        display: inline-block;
+        width: 100%;
+        background-color: #F4A460;
+    }
+
+    header {
+        height: 450px;
+        margin: auto;
+        overflow: auto;
+    }
+
+    header img {
+        width: 42%;
+        float: right;
+        margin-right: 15px;
+    }
+    header p {
+        padding-left: 10px;
+        width: 48%;
+        float: left;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .html,
+    .c\+\+,
+    .css,
+    .unity {
+
+        float: left;
+        width: 40%;
+    }
+
+    .python,
+    .bash,
+    .c\#,
+    .javascript {
+        float: right;
+        width: 40%;
+    }
+
+    #skills {
+        height: 350px;
+        margin: auto;
+        overflow: auto;
+    }
+
+    .portfolio {        
+        margin: auto;
+        overflow: auto;
+    }
+
+    .portfolio p {
+        margin: auto;
+        width: 60%;
+    }
+
+    .marketing {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+    }
+
+    .search-page {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+        margin-bottom: 5%;
+    }
+
+    .travel-app {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+    }
+
+    .favorite-spots {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+    }
+
+    .photo-gallery {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+    }
+
+    .calculator {
+        float: left;
+        width: 48%;
+        margin-right: 1%;        
+        margin-left: 1%;
+    }
+
+    #portfolio {
+        margin-bottom: 2.5%;
+        margin-top: 2.5%;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        height: 580px;
+        margin: auto;
+        overflow: auto;
+        padding: 0%;
+    }
+
+    header h1,
+    header h4 {
+        display: inline-block;
+    }
+
+    header nav h1 {
+        float:left;
+        margin-left: 3.5%;
+        width: 60%;
+        text-align: left;
+    }
+
+    header nav h4,
+    header nav .nav-btn {
+        float: left;
+        width: 7%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        color: yellow;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 3%;
+    }
+
+
+    .portfolio {        
+        margin: auto;
+        overflow: auto;
+        padding-bottom: 20px;
+    }
+
+    .portfolio p,
+    .portfolio img {
+        width: 100%;
+    }
+
+    #portfolio {
+        margin-bottom: 0;
+    }
+
+    .marketing {
+        float: left;
+        width: 30%;
+        margin-bottom: 0%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .search-page {
+        float: left;
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .travel-app {
+        float: left;
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .favorite-spots {
+        float: left;
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .photo-gallery {
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .calculator {
+        float: left;
+        width: 30%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+/*  
+***************Float Clearfix
+  */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
